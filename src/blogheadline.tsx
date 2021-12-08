@@ -2,7 +2,7 @@ import React from "react";
 
 import { IBlogHeadlineProps } from "./IBlogHeadlineProps";
 import { TridentProfessionaServicesUI } from "./TridentProfessionaServicesUISettings";
-import "./blogheadline.css";
+import "./responsive-img.css";
 export const BlogHeadline = (props: IBlogHeadlineProps) => {
   const {
     className,
@@ -14,22 +14,24 @@ export const BlogHeadline = (props: IBlogHeadlineProps) => {
     blogPostHeadlineContainerClassName,
   } = props;
   return (
-    <section className={className}>
-      <div className={blogPostHeadlineContainerClassName}>
+    <article className={className}>
+      <header className={blogPostHeadlineContainerClassName}>
         <h2 className={blogPostHeadlineClassName}>{blogPostHeadline}</h2>
-      </div>
-      <div
-        style={{
-          backgroundImage: blogPostImageUrl
-            ? "url(" + blogPostImageUrl + ")"
-            : undefined,
-        }}
-        className={
-          blogImageStyleClass ||
-          TridentProfessionaServicesUI.DefaultResponsiveImageCSSClass
-        }
-      />
-      <p>{blogPostSummary}</p>
-    </section>
+      </header>
+      <figure>
+        <div
+          style={{
+            backgroundImage: blogPostImageUrl
+              ? "url(" + blogPostImageUrl + ")"
+              : undefined,
+          }}
+          className={
+            blogImageStyleClass ||
+            TridentProfessionaServicesUI.DefaultResponsiveImageCSSClass
+          }
+        />
+        <figcaption>{blogPostSummary}</figcaption>
+      </figure>
+    </article>
   );
 };

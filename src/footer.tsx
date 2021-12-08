@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+
 import { IFooter } from "./IFooter";
 import { UnorderedListLinks } from "./UnorderedListLinks";
 export const Footer = (props: IFooter) => {
