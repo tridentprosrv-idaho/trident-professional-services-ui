@@ -5,7 +5,7 @@ export const UnorderedListLinks = (props: IUnorderedListLinks) => {
   return (
     <ul className={className}>
       {(links ? links : []).map((link, index, array) => (
-        <li className={linksClassName}>
+        <li className={linksClassName} key={"trident-ul-"+index}>
           <a href={link.url} title={link.text}>
             {link.icon}
             {link.icon ? "\u00a0" : ""}

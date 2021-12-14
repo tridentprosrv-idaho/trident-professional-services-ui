@@ -2,7 +2,13 @@ import { ITridentProfessionaServicesUI } from "./ITridentProfessionaServicesUI";
 
 export const TridentProfessionaServicesUI: ITridentProfessionaServicesUI = {
   DefaultMobileWidth: 640,
-  DefaultLinkButtonCSSClass:"trident-default-link-button", 
-  DefaultResponsiveImageCSSClass: "trident-default-responsive-img",
-  DefaultProductHeadlineCSSClass: "trident-default-product-headline",
+  DefaultLinkButtonCSSClass:"default-trident-link-button",
+  DefaultMobileButtonShowCSSClass:"default-trident-navigation-show-button",
+  DefaultMobileHideCSSClass:"default-trident-mobile-hide",
+  DefaultMobileButtonHideCSSClass:"default-trident-navigation-hide-button",
+  DefaultMobileShowCSSClass:"default-trident-mobile-show",
+  DefaultNavigationCSSClass:"default-trident-navigation",
+  DefaultHiddenElementCSS: "default-trident-hide",
+  DefaultResponsiveImageCSSClass: "default-trident-responsive-img",
+  DefaultProductHeadlineCSSClass: "default-trident-product-headline",
 };
