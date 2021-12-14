@@ -1,0 +1,94 @@
+@media screen and (max-width: 640px) {
+  /*mobile*/
+  div.default-trident-navigation {
+    padding-right: 30px;
+  }
+
+  div.default-trident-navigation.default-trident-mobile-show {
+    height: 100%;
+    width: 100%;
+  }
+  div.default-trident-navigation.default-trident-mobile-hide {
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  /*tablets*/
+  div.default-trident-navigation {
+    height: 100%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  /* tablets and mobile devices */
+  div.default-trident-navigation {
+    background-color: #1d3c6a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: right;
+    position: absolute;
+  }
+  div.default-trident-navigation a,
+  div.default-trident-navigation a:visited {
+    color: #fff;    
+  }
+}
+@media screen and (min-width: 1008px) {
+  /* PC's laptops, etc */
+  div.default-trident-navigation{
+    display: block;
+    height: 22px;
+    width: 100%;
+  }
+  div.default-trident-navigation,  
+  div.default-trident-navigation a,
+  div.default-trident-navigation a:visited {
+    color: #1d3c6a;
+  }
+  div.default-trident-navigation > nav {
+    
+    height: 20px;
+    width: 100%;
+  }
+  div.default-trident-navigation > nav > ul {        
+    float: left;
+    height: 19px;
+  }
+  div.default-trident-navigation > nav > ul >li {
+    display: inline-block;
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 641px) {
+  /* hide buttons for everything not mobile */
+  .default-trident-navigation-show-button,
+  .default-trident-navigation-hide-button {
+    display: none;
+  }
+}
+
+div.default-trident-navigation {
+  font-family: sans-serif;
+}
+div.default-trident-navigation > nav > ul {
+  padding: 0;
+  list-style-type: none;
+}
+div.default-trident-navigation a,
+div.default-trident-navigation a:visited {
+  font-weight: bold;
+  text-decoration: none;
+}
+div.default-trident-navigation a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+.default-trident-hide {
+  display: none;
+}
