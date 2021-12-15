@@ -17,12 +17,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -s docs-build -s ./stories/assets"
+    "build-storybook": "build-storybook -s docs-build -s ./stories/assets",
+    "build": "rollup -c"
   },
   "eslintConfig": {
     "extends": [
