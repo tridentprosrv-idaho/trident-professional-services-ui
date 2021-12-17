@@ -1,5 +1,4 @@
 import React from "react";
-
 import { IBlogHeadlineProps } from "./IBlogHeadlineProps";
 import { TridentProfessionaServicesUI } from "./TridentProfessionaServicesUISettings";
 import "./responsive-img.css";
