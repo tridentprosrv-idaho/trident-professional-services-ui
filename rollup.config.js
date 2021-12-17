@@ -34,5 +34,5 @@ export default {
       plugins: ["@babel/plugin-transform-runtime"],
     }),
   ],
-  external: [...Object.keys(packageJson.devDependencies), 'react', 'react-dom'], // https://rollupjs.org/guide/en/#peer-dependencies
+  external: [...Object.keys(packageJson.devDependencies), 'react', 'react-domh'], // https://rollupjs.org/guide/en/#peer-dependencies
 };
